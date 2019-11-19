@@ -2,7 +2,10 @@
   "name": "img2base64",
   "displayName": "img2base64",
   "description": "提供右键快捷方式将小图片转换成base64",
-  "version": "0.0.1",
+	"version": "0.0.2",
+	"publisher": "imgss",
+	"icon": "img/icon.png",
+	"repository": "https://github.com/imgss/img2base64",
   "engines": {
     "vscode": "^1.20.0"
   },
