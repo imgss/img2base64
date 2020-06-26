@@ -13,7 +13,8 @@
     "Other"
   ],
   "activationEvents": [
-    "onCommand:extension.base64"
+    "onCommand:extension.base64",
+    "onCommand:extension.sha512"
   ],
   "main": "./out/extension.js",
   "contributes": {
@@ -21,6 +22,10 @@
       {
         "command": "extension.base64",
         "title": "img2base64:复制base64"
+      },
+      {
+        "command": "extension.sha512",
+        "title": "generate:sha512"
       }
     ],
     "menus": {
@@ -28,6 +33,11 @@
         {
           "when": "resourceScheme == file",
           "command": "extension.base64",
+          "group": "base64"
+        },
+        {
+          "when": "resourceScheme == file",
+          "command": "extension.sha512",
           "group": "base64"
         }
       ]
